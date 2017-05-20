@@ -7,6 +7,7 @@ Integrantes: (Nombre, Carnet)
 
 Archivo del programa Simón Dice
 */
+//Variables pi9ns leds
 const int led_rojo = 2;
 const int led_azul = 3;
 const int led_amarillo = 4;
