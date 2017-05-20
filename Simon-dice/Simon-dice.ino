@@ -25,13 +25,13 @@ const int zumbador = 7;
 
 // Declaración de variables
 //// Zumbador
-int notas = 15; // Cantidad de notas en la melodía
-char melodia[] = "cacaffeggeeddc"; // Melodía, dada en notación musical GABCDEF
-int tiempos[] = { 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 4 }; // Tiempos por nota
-int tempo = 100; // Tiempo por nota
+int notas = 15;							// Cantidad de notas en la melodía
+char melodia[] = "cacaffeggeeddc";				// Melodía, dada en notación musical GABCDEF
+int tiempos[] = { 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 4 };	// Tiempos por nota
+int tempo = 100;						// Tiempo por nota
 //// Otros
-int puntuacion_maxima = 20; // Cantidad de pasos a recordar antes de ganar
-long secuencia[puntuacion_maxima]; // La variable para almacenar la secuencia
-int contador = 0; // Contador para recorrer la secuencia mientras se juegue
-int input = 5; // Para indicar el botón pulsado
-int despliegue = 500; // Tiempo en ms para desplegar cada LED en secuencia
+int puntuacion_maxima = 20;					// Cantidad de pasos a recordar antes de ganar
+long secuencia[puntuacion_maxima];				// La variable para almacenar la secuencia
+int contador = 0;						// Contador para recorrer la secuencia mientras se juegue
+int input = 5;							// Para indicar el botón pulsado
+int despliegue = 500;						// Tiempo en ms para desplegar cada LED en secuencia
