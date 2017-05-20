@@ -81,7 +81,7 @@ void playnota(char nota, int duracion) {
 
 // Función que define las notas según su duración y el tono
 void playtono(int tono, int duracion) {
-	for(largo i = 0; i < duracion * 1000L; i += tono *2) {
+	for(long i = 0; i < duracion * 1000L; i += tono *2) {
 		digitalWrite(zumbador, HIGH);
 		delayMicroseconds(tono);
 		digitalWrite(zumbador, LOW);
@@ -112,7 +112,7 @@ void destello_verde() {
 }
 
 // Función para mostrar qué boton se tenía que presionar en caso de error del jugador
-void cual_era_correcto(largo led) {
+void cual_era_correcto(long led) {
 	switch (led) {
 			case 0;
 			destello_rojo();
