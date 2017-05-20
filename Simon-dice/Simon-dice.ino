@@ -7,3 +7,18 @@ Integrantes: (Nombre, Carnet)
 
 Archivo del programa Simón Dice
 */
+const int led_rojo = 2;
+const int led_azul = 3;
+const int led_amarillo = 4;
+const int led_verde = 5;
+const int led_random = 6;
+
+const int zumbador = 6;
+
+const int boton_rojo = 9;
+const int boton_azul = 10;
+const int boton_amarillo = 11;
+const int boton_verde = 12;
+const int boton_random = 13;
+
+
