@@ -35,3 +35,27 @@ long secuencia[puntuacion_maxima];				// La variable para almacenar la secuencia
 int contador = 0;						// Contador para recorrer la secuencia mientras se juegue
 int input = 5;							// Para indicar el botón pulsado
 int despliegue = 500;						// Tiempo en ms para desplegar cada LED en secuencia
+
+// Configuración inicial del Arduino
+void setup() {
+	// Entradas
+	pinMode(boton_rojo, INPUT);
+	pinMode(boton_azul, INPUT);
+	pinMode(boton_amarillo, INPUT);
+	pinMode(boton_verde, INPUT);
+	pinMode(boton_random, INPUT);
+	// Salidas
+	pinMode(led_rojo, OUTPUT);
+	pinMode(led_azul, OUTPUT);
+	pinMode(led_amarillo, OUTPUT);
+	pinMode(led_verde, OUTPUT);
+	pinMode(zumbador, OUTPUT);
+	// Resistencias de pullup, ya que los botones son normalmente abiertos
+	digitalWrite(boton_rojo, HIGH);
+	digitalWrite(boton_azul, HIGH);
+	digitalWrite(boton_amarillo, HIGH);
+	digitalWrite(boton_rojo, HIGH);
+	digitalWrite(boton_rojo, HIGH);
+	// Melodía al inicio
+	melodia();
+}
