@@ -33,7 +33,7 @@ int tempo = 100;						// Tiempo por nota
 int puntuacion_maxima = 20;					// Cantidad de pasos a recordar antes de ganar
 long secuencia[puntuacion_maxima];				// La variable para almacenar la secuencia
 int contador = 0;						// Contador para recorrer la secuencia mientras se juegue
-int input = 5;							// Para indicar el botón pulsado
+int input = 6;							// Para indicar el botón pulsado
 int despliegue = 500;						// Tiempo en ms para desplegar cada LED en secuencia
 
 // Configuración inicial del Arduino
