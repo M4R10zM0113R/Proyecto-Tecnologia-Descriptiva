@@ -152,3 +152,57 @@ void melodia() {
 	digitalWrite(led_azul, LOW);
 	resetearcontador();						// Reinicio del juego
 }
+
+// Reiniciar contador 
+void reiniciocontador(){
+contador = 0;
+wait = 500;
+}
+//función que crea y reproduce patrones
+void secuencia (){
+//mas aleatorio la función random
+randomSeed(analogRead(8));
+sequence[contador]=random(4);
+for (int i = 0; i < contador; i++){
+boton_correcto(sequence [i]);
+}
+wait = 500 –(Contador * 15);
+Contador++;
+}
+//lee los botones que el usuario presione
+void leer_secuencia(){
+for (int  i=1; i<contador; i++){
+while (input ==5){
+if(digitalRead(boton_rojo)==LOW){
+input=0;
+}
+If (digitalRead(boton_verde)==LOW){
+input =1;
+}
+If(digitalRead(boton_amarillo)== LOW){
+input=2;
+}
+If(digitalRead(boton_azul)==LOW{
+Input=3;
+}
+}
+if (sequence[i-1] == input) {              
+       boton_correcto(input);                           
+        if (i == puntuacion_maxima) {                        
+          melodia();                        
+        }
+      }
+        else {
+          playtono(4545,1500);                  
+          delay(500);
+          boton_correcto(sequence[i-1]);                 
+          boton_correcto(sequence[i-1]);                 
+          boton_correcto(sequence[i-1]);
+          delay(1000);
+          melodia();
+          reiniciocontador();                          
+      } 
+    input = 5;                                   
+    }
+  }
+
